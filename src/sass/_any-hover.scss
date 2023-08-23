@@ -1,0 +1,107 @@
+@media (any-hover: hover) {
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 963px) {
+    .header {
+      &__link {
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  .greeting {
+    &__btn {
+      &:hover .greeting__svg {
+        fill: $primary;
+      }
+    }
+  }
+
+  .portfolio {
+    &__card-wrapper {
+      &:hover .portfolio__top::before {
+        opacity: 0.8;
+      }
+
+      &:hover .portfolio__desc {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:hover .portfolio__name {
+        text-decoration: underline;
+      }
+
+      &:hover .portfolio__svg {
+        animation: right 1s ease-in-out infinite;
+        animation-direction: alternate-reverse;
+      }
+    }
+
+    &__github-link {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      &:hover {
+        background-color: black;
+        border-color: black;
+      }
+    }
+
+    &__card-btn {
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+
+  .skills {
+    &__item {
+      &:hover {
+        transform: scale(1.1) !important;
+      }
+    }
+  }
+
+  .contacts {
+    &__item {
+      &:hover .contacts__text {
+        &:last-of-type {
+          text-decoration: underline;
+        }
+      }
+
+      &:hover .contacts__arrow {
+        animation: right 1s ease-in-out infinite;
+        animation-direction: alternate-reverse;
+      }
+    }
+
+    &__link {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .scroll {
+    &__btn {
+      &:hover .scroll__svg {
+        fill: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт-резюме - Анастасия Бунина</title>
+  <link rel="preload" href="fonts/open-sans-v35-cyrillic_latin-700.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v35-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v35-cyrillic_latin-600.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v35-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v35-cyrillic_latin-regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v35-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="#info" class="header__link">Информация</a></li>
+          <li class="header__item"><a href="#portfolio" class="header__link">Портфолио</a></li>
+          <li class="header__item"><a href="#skills" class="header__link">Навыки</a></li>
+          <li class="header__item"><a href="#contacts" class="header__link">Связь со&nbsp;мной</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="header__burger btn" aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section greeting">
+      <div class="container">
+        <div class="greeting__wrapper">
+          <div class="greeting__content">
+            <div class="greeting__left">
+              <span class="greeting__span">&#128075;&nbsp;Привет! Меня зовут Анастасия Бунина и&nbsp;я</span>
+              <h1 class="greeting__title">Веб-верстальщик</h1>
+            </div>
+            <div class="greeting__right">
+              <picture class="greeting__img-wrapper">
+                <img src="img/greeting.png" alt="Картинка" class="greeting__img">
+              </picture>
+              <div class="greeting__animate-wrapper">
+                <div class="greeting__animate">
+                  <span class="greeting__animate-line"></span>
+                  <span class="greeting__animate-line"></span>
+                  <span class="greeting__animate-line"></span>
+                  <span class="greeting__animate-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="greeting__btn btn" aria-label="Прокрутить вниз">
+            <svg class="greeting__svg">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section info" id="info">
+      <div class="container">
+        <div class="info__wrapper section__wrapper">
+          <h2 class="info__title section__title">Информация обо мне</h2>
+          <p class="info__birthday info__text"><span class="info__span">Год рождения: </span>19/03/2002.</p>
+          <p class="info__name info__text"><span class="info__span">Полное имя: </span>Бунина Анастасия Дмитриевна.
+          </p>
+          <p class="info__text">Начиная с&nbsp;2022 года
+            начала свой путь в изучении вёрстки и создании сайтов,
+            а&nbsp;позже&nbsp;&mdash; заинтересовалась Frond-End разработкой.</p>
+          <p class="info__text">На&nbsp;данный момент прохожу курсы Frond-End разработчика на&nbsp;сайте <a
+              href="https://netology.ru" class="info__link" target="_blank">Нетологии</a>. В&nbsp;ноябре 2022
+            по&nbsp;август 2023 года
+            прошла курсы по&nbsp;Веб-вёрстке на&nbsp;сайте <a href="https://go.skillbox.ru" class="info__link"
+              target="_blank">Skillbox</a>. <span class="info__span">С&nbsp;просьбой о&nbsp;просмотре сертификатов
+              писать на&nbsp;одну из&nbsp;почт.</span></p>
+          <p class="info__text info__qualities">Качества: ответственность, усердность, честность.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="portfolio__wrapper section__wrapper">
+          <h2 class="portfolio__title section__title">Портфолио</h2>
+          <p class="portfolio__text">Сайты, выполненные мною за&nbsp;время курсов.</p>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">SitDownPls&nbsp;&mdash; интернет-магазин мебели</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/sitdownpls.jpg" alt="Сайт SitDownPls" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">SitDownPls</h3>
+                      <span class="portfolio__author">Skillbox (главная страница)</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/sitDownPls/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/sitDownPls')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">W-Wave Radio</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/radiowwave.jpg" alt="Сайт W-Wave" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">W-Wave</h3>
+                      <span class="portfolio__author">Skillbox (главная страница и&nbsp;модальное окно
+                        &laquo;Вход&raquo;)</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/radio_Wwave/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/radio_Wwave')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">Студия High Pass</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/highpass.jpg" alt="Сайт High Pass" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">High Pass</h3>
+                      <span class="portfolio__author">Skillbox</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/high_Pass/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/high_Pass')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">Noemi, блог о&nbsp;творчестве, спорте и&nbsp;образе жизни</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/noemi.jpg" alt="Сайт Noemi" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">Noemi</h3>
+                      <span class="portfolio__author">Netology (главная страница и&nbsp;модальное окно)</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/noemi/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/noemi')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">SitDownPls&nbsp;&mdash; интернет-магазин мебели</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/sitdownpls-catalog.jpg" alt="Сайт SitDownPls" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">SitDownPls</h3>
+                      <span class="portfolio__author">Skillbox (страница каталога)</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/sitDownPls/catalog.html" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/sitDownPls')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">Курсы Skillbox</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/skillbox.jpg" alt="Сайт Skillbox" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">Skillbox</h3>
+                      <span class="portfolio__author">Skillbox (Bootstrap)</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/skillbox/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/skillbox')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">SitDownPls&nbsp;&mdash; интернет-магазин мебели</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/sitdownpls-product.jpg" alt="Сайт SitDownPls" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">SitDownPls</h3>
+                      <span class="portfolio__author">Skillbox (страница продукта)</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/sitDownPls/product.html" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/sitDownPls')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">Мой собственный сайт-визитка</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/resume.jpg" alt="Мой сайт резюме" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">Резюме</h3>
+                      <span class="portfolio__author">Я</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/resume/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/resume')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">Евклид, проектные системы</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/evklid.jpg" alt="Сайт Евклид" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">Evklid</h3>
+                      <span class="portfolio__author">Skillbox</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/evklid/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/evklid')">Код</button>
+              </article>
+            </li>
+            <li class="portfolio__item">
+              <article class="portfolio__card">
+                <div class="portfolio__card-wrapper">
+                  <div class="portfolio__top">
+                    <p class="portfolio__desc">Сеть отелей Lagoona</p>
+                    <picture class="portfolio__img-wrapper">
+                      <img src="img/lagoona.jpg" alt="Сайт Lagoona" class="portfolio__img">
+                    </picture>
+                  </div>
+                  <div class="portfolio__content">
+                    <div class="portfolio__name-author">
+                      <h3 class="portfolio__name">Lagoona</h3>
+                      <span class="portfolio__author">Skillbox (без адаптива и гридов)</span>
+                    </div>
+                    <a href="https://stasyabunina.github.io/lagoona/" class="portfolio__github-link" target="_blank">
+                      <span class="portfolio__span">GitHub Pages</span>
+                      <svg class="portfolio__svg">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="portfolio__card-btn btn" type="button" onclick="openLink('https://github.com/stasyabunina/lagoona')">Код</button>
+              </article>
+            </li>
+          </ul>
+          <button type="button" class="portfolio__btn btn">Показать ещё</button>
+        </div>
+      </div>
+    </section>
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="skills__wrapper section__wrapper">
+          <h2 class="skills__title section__title">Навыки</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#interact"></use>
+              </svg>
+              <p class="skills__text"><span class="skills__span">Взаимодействие пользователя с сайтом.</span> Создаю
+                интерактивные элементы как сама, так и&nbsp;при использовании сторонних
+                библиотек:
+                кастомные выпадающие списки и&nbsp;чекбоксы, слайдеры, свайперы, бургер-меню, валидация формы, табы,
+                модальные окна, аккордион, кнопка &laquo;Показать больше&raquo;, карта, поиск и т.д.</p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#adaptive"></use>
+              </svg>
+              <p class="skills__text"><span class="skills__span">Адаптивная и&nbsp;оптимизированная вёрстка.</span> Пишу
+                код так, чтобы страница выглядела
+                хорошо на&nbsp;экранах с&nbsp;любым разрешением, включая мобильные устройства.</p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#crossbrowser"></use>
+              </svg>
+              <p class="skills__text"><span class="skills__span">Кроссбраузерность.</span> Верстаю так, чтобы
+                отображение и&nbsp;работоспособность сайта
+                в&nbsp;популярных современных браузерах было одинаковым или близким к&nbsp;этому.</p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#keyboard"></use>
+              </svg>
+              <p class="skills__text"><span class="skills__span">Доступность.</span> Делаю сайт удобным и&nbsp;доступным
+                для пользователей с&nbsp;ограниченными
+                возможностями (клавиатура и&nbsp;скринридеры, устройства для чтения текста или голосовые устройства
+                управления).</p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#code"></use>
+              </svg>
+              <p class="skills__text"><span class="skills__span">Знание HTML и&nbsp;CSS.</span> Использование
+                препроцессора SCSS/Sass, Flexbox, CSS Grid,
+                методологии БЭМ, семантической вёрстки. Базовое знание PUG и библиотеки Bootstrap.</p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#source"></use>
+              </svg>
+              <p class="skills__text">Знание <span class="skills__span">JavaScript.</span></p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#photoshop"></use>
+              </svg>
+              <p class="skills__text">Владею базовыми навыками <span class="skills__span">Photoshop</span>, хорошо
+                знакома с&nbsp;<span class="skills__span">Figma.</span></p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#gulp"></use>
+              </svg>
+              <p class="skills__text">Умею автоматизировать свою работу с&nbsp;<span class="skills__span">Gulp.</span>
+              </p>
+            </li>
+
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#git"></use>
+              </svg>
+              <p class="skills__text">Использую систему контроля версий <span class="skills__span">Git</span>
+                и&nbsp;работаю с&nbsp;<span class="skills__span">Github.</span></p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+              <p class="skills__text">Умею верстать <span class="skills__span">HTML-письма.</span></p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#chat"></use>
+              </svg>
+              <p class="skills__text"><span class="skills__span">Знание английского языка (C1&nbsp;&mdash;
+                  Advanced).</span> В 2020 году был сдан
+                ЕГЭ на 88 баллов.</p>
+            </li>
+            <li class="skills__item">
+              <svg class="skills__svg">
+                <use xlink:href="img/sprite.svg#animate"></use>
+              </svg>
+              <p class="skills__text">Базовые знания <span class="skills__span">CSS-анимаций.</span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__wrapper section__wrapper">
+          <h2 class="info__title section__title">Связь со&nbsp;мной</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="contacts__svg">
+                <use xlink:href="img/sprite.svg#yandex"></use>
+              </svg>
+              <span class="contacts__text">Через Яндекс:</span>
+              <span class="contacts__text">tryes12@yandex.ru</span>
+              <a href="mailto:tryes12@yandex.ru" class="contacts__link" target="_blank">
+                <span class="contacts__span">Связаться</span>
+                <svg class="contacts__arrow">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__svg">
+                <use xlink:href="img/sprite.svg#google"></use>
+              </svg>
+              <span class="contacts__text">Через Google:</span>
+              <span class="contacts__text">tryes9856@gmail.com</span>
+              <a href="mailto:tryes9856@gmail.com" class="contacts__link" target="_blank">
+                <span class="contacts__span">Связаться</span>
+                <svg class="contacts__arrow">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__scroll scroll">
+          <button type="button" class="scroll__btn btn" aria-label="Вернуться в начало">
+            <svg class="scroll__svg">
+              <use xlink:href="img/sprite.svg#arrow-up"></use>
+            </svg>
+          </button>
+        </div>
+        <span class="footer__span">&copy; Все svg-иконки взяты с <a href="https://uxwing.com/" class="footer__link"
+            target="_blank">uxwing.com</a> и <a href="https://www.svgrepo.com/" class="footer__link"
+            target="_blank">svgrepo.com</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="libs/gsap.min.js"></script>
+  <script src="libs/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

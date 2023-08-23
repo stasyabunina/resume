@@ -1,0 +1,32 @@
+.skills {
+  &__list {
+    @include grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 100px;
+    gap: 65px;
+  }
+
+  &__item {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .1s ease-in-out;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__svg {
+    margin-bottom: 25px;
+    width: auto;
+    height: 50px;
+    display: flex;
+    transition: transform .1s ease-in-out;
+  }
+
+  &__span {
+    font-weight: 700;
+  }
+}

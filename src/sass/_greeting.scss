@@ -1,0 +1,163 @@
+.greeting {
+  padding: 0;
+  height: 100vh;
+  @include flex-column;
+  justify-content: center;
+
+  &__wrapper {
+    @include flex-column;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $big_gap;
+  }
+
+  &__left {
+    margin-right: $bigger_gap;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__animate {
+    position: absolute;
+    max-width: 110px;
+    width: 100%;
+    max-height: 45px;
+    height: 100%;
+    left: 50%;
+    top: 71%;
+    transform: translateX(-50%) translateY(-29%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 180%;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: $primary;
+      border-radius: 10px;
+      opacity: 0.2;
+    }
+  }
+
+  &__animate-line {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 4.5px;
+    background-color: black;
+    transform-origin: 100%;
+    animation: line 2.5s ease infinite;
+    opacity: 0.4;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 33.33%;
+      animation-delay: .2s;
+    }
+
+    &:nth-child(3) {
+      width: 50%;
+      top: 66.66%;
+      animation-delay: .45s;
+    }
+
+    &:nth-child(4) {
+      width: 80%;
+      top: 100%;
+      animation-delay: .65s;
+    }
+  }
+
+  &__img-wrapper {
+    display: flex;
+    max-width: 320px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 31.5%;
+      left: 41%;
+      display: block;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: black;
+      animation: blink 2s ease-in-out infinite;
+      animation-direction: alternate-reverse;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 31.5%;
+      right: 41%;
+      display: block;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: black;
+      animation: blink 2s linear infinite;
+      animation-direction: alternate-reverse;
+    }
+  }
+
+  &__span {
+    display: block;
+    margin-bottom: $less_gap;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__title {
+    margin: 0;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -10px;
+      width: 4px;
+      height: 100%;
+      background-color: black;
+      animation: cursor 1.5s step-end infinite;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    animation: down 1s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+
+    &:focus-visible .greeting__svg {
+      fill: $primary;
+    }
+  }
+
+  &__svg {
+    width: 50px;
+    height: 50px;
+    fill: black;
+    display: flex;
+    transition: fill .1s ease-in-out;
+  }
+}

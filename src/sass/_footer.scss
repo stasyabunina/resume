@@ -1,0 +1,39 @@
+.footer {
+  padding: $section_gap 0 $big_gap 0;
+
+  &__wrapper {
+    @include flex-column;
+  }
+
+  &__span {
+    display: block;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
+
+.scroll {
+  @include flex-column;
+  margin-bottom: $bigger_gap;
+
+  &__btn {
+    position: relative;
+    border: none;
+    border-radius: 100%;
+    animation: up 1s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+    outline: none;
+
+    &:focus-visible .scroll__svg {
+      fill: $primary;
+    }
+  }
+
+  &__svg {
+    width: 50px;
+    height: 50px;
+    fill: black;
+    display: flex;
+    transition: fill .1s ease-in-out;
+  }
+}
